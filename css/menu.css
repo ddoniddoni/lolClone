@@ -1,55 +1,76 @@
 .content {
   width: 100%;
   height: 80px;
-  background-color: #0f0f0f;
   display: flex;
   align-items: center;
+  background-color: #0f0f0f;
 }
 
-.content__menu {
-  color: #f0f0f0;
-  margin-left: 40px;
+.content__image {
+  display: flex;
+  align-items: center;
+
+  height: 80px;
+  width: 12%;
+}
+
+.content__text {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  width: 68%;
 }
 
 .content__menu-logo {
   width: 50px;
   color: #f0f0f0;
-  margin-left: 50px;
+  margin-left: 40px;
 }
 
 .content__menu-icon {
   width: 50px;
   color: #f0f0f0;
-  margin-left: 50px;
+  margin-left: 40px;
+}
+
+.content__menu {
+  color: #f0f0f0;
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 40px;
 }
 
 .content__menu-login {
+  height: 80px;
   display: flex;
   align-items: center;
-  margin-left: 20px;
+  font-weight: 600;
+  width: 20%;
 }
 
 .content__menu-login-iconCaution {
-  margin-left: 10px;
   color: #f0f0f0;
 }
 .content__menu-login-iconGlobal {
-  margin-left: 10px;
+  margin-left: 20px;
   color: #f0f0f0;
 }
 
 .content__menu-loginBtn {
-  margin-left: 10px;
+  margin-left: 20px;
   color: #f0f0f0;
   background-color: #0f0f0f;
+  font-size: 12px;
 }
 
 .content__menu-signIn {
-  margin-left: 20px;
+  margin-left: 30px;
   background-color: #00becf;
   color: #f0f0f0;
   width: 130px;
   height: 45px;
   border: solid 1px #00becf;
   border-radius: 5px;
+  font-size: 12px;
+  font-weight: 1000;
 }
