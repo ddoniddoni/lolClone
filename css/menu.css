@@ -1,3 +1,8 @@
+.content a {
+  text-decoration: none;
+  color: #f0f0f0;
+}
+
 .content {
   width: 100%;
   height: 80px;
@@ -9,16 +14,8 @@
 .content__image {
   display: flex;
   align-items: center;
-
   height: 80px;
   width: 12%;
-}
-
-.content__text {
-  height: 80px;
-  display: flex;
-  align-items: center;
-  width: 68%;
 }
 
 .content__menu-logo {
@@ -33,11 +30,29 @@
   margin-left: 40px;
 }
 
+.content__text {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  width: 68%;
+}
+
 .content__menu {
-  color: #f0f0f0;
-  font-size: 12px;
-  font-weight: 600;
-  margin-left: 40px;
+  border-bottom: 2px solid transparent;
+  color: #f9f9f9;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 76px;
+  margin: 0 0.85em;
+  overflow: hidden;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 2px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: color 1s cubic-bezier(0.06, 0.81, 0, 0.98),
+    border-color 0.5s cubic-bezier(0.06, 0.81, 0, 0.98);
 }
 
 .content__menu-login {
