@@ -154,8 +154,9 @@ const BACK_IMAGE = ".png";
 const makeImage = () => {
   for (let i = 0; i < Object.keys(championName).length; i++) {
     const container = document.getElementById("image__container");
+    const nextPage = document.getElementById("media");
     const chamImage = document.createElement("img");
-    container.append(chamImage);
+    nextPage.append(chamImage);
     chamImage.setAttribute("id", "chamImage");
     chamImage.setAttribute("width", "100");
     chamImage.setAttribute("height", "100");
