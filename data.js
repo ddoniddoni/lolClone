@@ -147,19 +147,3 @@ const championName = {
   Zoe: "Zoe",
   Zyra: "Zyra",
 };
-
-const FRONT_IMAGE = "https://ddragon.leagueoflegends.com/cdn/10.4.1/img/champion/";
-const BACK_IMAGE = ".png";
-
-const makeImage = () => {
-  const container = document.getElementById("image__container");
-  const chamImage = document.createElement("img");
-  container.append(chamImage);
-  chamImage.setAttribute("width", "100");
-  chamImage.setAttribute("height", "100");
-  chamImage.setAttribute("src", FRONT_IMAGE + championName.Yuumi + BACK_IMAGE);
-};
-
-makeImage();
-
-console.log(championName.Garen);
