@@ -17,7 +17,7 @@ const championName = {
   Caitlyn: "Caitlyn",
   Camille: "Camille",
   Cassiopeia: "Cassiopeia",
-  ChoGath: "Cho'Gath",
+  Chogath: "Chogath",
   Corki: "Corki",
   Darius: "Darius",
   Diana: "Diana",
@@ -47,7 +47,7 @@ const championName = {
   Jayce: "Jayce",
   Jhin: "Jhin",
   Jinx: "Jinx",
-  KaiSa: "Kai'Sa",
+  Kaisa: "Kaisa",
   Kalista: "Kalista",
   Karthus: "Karthus",
   Kassadin: "Kassadin",
@@ -55,11 +55,11 @@ const championName = {
   Kayle: "Kayle",
   Kayn: "Kayn",
   Kennen: "Kennen",
-  KhaZix: "Kha'Zix",
+  Khazix: "Kha'Zix",
   Kindred: "Kindred",
   Kled: "Kled",
-  KogMaw: "Kog'Maw",
-  LeBlanc: "LeBlanc",
+  KogMaw: "Kogmaw",
+  Leblanc: "LeBlanc",
   LeeSin: "LeeSin",
   Leona: "Leona",
   Lissandra: "Lissandra",
@@ -90,7 +90,7 @@ const championName = {
   Quinn: "Quinn",
   Rakan: "Rakan",
   Rammus: "Rammus",
-  RekSai: "Rek'Sai",
+  RekSai: "Reksai",
   Renekton: "Renekton",
   Rengar: "Rengar",
   Riven: "Riven",
@@ -109,7 +109,7 @@ const championName = {
   Sona: "Sona",
   Soraka: "Soraka",
   Swain: "Swain",
-  sylas: "sylas",
+  Sylas: "sylas",
   Syndra: "Syndra",
   TahmKench: "TahmKench",
   Taliyah: "Taliyah",
@@ -127,13 +127,13 @@ const championName = {
   Varus: "Varus",
   Vayne: "Vayne",
   Veigar: "Veigar",
-  VelKoz: "VelKoz",
+  Velkoz: "VelKoz",
   Vi: "Vi",
   Viktor: "Viktor",
   Vladimir: "Vladimir",
   Volibear: "Volibear",
   Warwick: "Warwick",
-  Wukong: "Wukong",
+  MonkeyKing: "Wukong",
   Xayah: "Xayah",
   Xerath: "Xerath",
   XinZhao: "XinZhao",
@@ -152,14 +152,15 @@ const FRONT_IMAGE = "https://ddragon.leagueoflegends.com/cdn/10.4.1/img/champion
 const BACK_IMAGE = ".png";
 
 const makeImage = () => {
-  const container = document.getElementById("image__container");
-  const chamImage = document.createElement("img");
-  container.append(chamImage);
-  chamImage.setAttribute("width", "100");
-  chamImage.setAttribute("height", "100");
-  chamImage.setAttribute("src", FRONT_IMAGE + championName.Yuumi + BACK_IMAGE);
+  for (let i = 0; i < Object.keys(championName).length; i++) {
+    const container = document.getElementById("image__container");
+    const chamImage = document.createElement("img");
+    container.append(chamImage);
+    chamImage.setAttribute("id", "chamImage");
+    chamImage.setAttribute("width", "100");
+    chamImage.setAttribute("height", "100");
+    chamImage.setAttribute("src", FRONT_IMAGE + Object.keys(championName)[i] + BACK_IMAGE);
+  }
 };
 
 makeImage();
-
-console.log(championName.Garen);
