@@ -148,20 +148,25 @@ const championName = {
   Zyra: "Zyra",
 };
 
-const FRONT_IMAGE = "https://ddragon.leagueoflegends.com/cdn/10.4.1/img/champion/";
+const FRONT_IMAGE =
+  "https://ddragon.leagueoflegends.com/cdn/10.4.1/img/champion/";
 const BACK_IMAGE = ".png";
 
 const makeImage = () => {
   for (let i = 0; i < Object.keys(championName).length; i++) {
-    const container = document.getElementById("image__container");
-    const nextPage = document.getElementById("media");
-    const chamImage = document.createElement("img");
+    const nextPage = document.getElementById("image__container");
+    const chamImage = document.createElement("input");
     nextPage.append(chamImage);
+    chamImage.setAttribute("type", "image");
     chamImage.setAttribute("id", "chamImage");
     chamImage.setAttribute("width", "100");
     chamImage.setAttribute("height", "100");
-    chamImage.setAttribute("src", FRONT_IMAGE + Object.keys(championName)[i] + BACK_IMAGE);
+    chamImage.setAttribute(
+      "src",
+      FRONT_IMAGE + Object.keys(championName)[i] + BACK_IMAGE
+    );
+    chamImage.setAttribute("value", Object.keys(championName)[i]);
+    chamImage.setAttribute("onClick", "location.href='player.html'");
   }
 };
-
 makeImage();
