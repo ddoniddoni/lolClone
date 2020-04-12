@@ -32,7 +32,7 @@ const championName = {
   Fizz: "Fizz",
   Galio: "Galio",
   Gangplank: "Gangplank",
-  Garen: "Garen",
+  Garen: "https://www.youtube.com/embed/tgbNymZ7vqY",
   Gnar: "Gnar",
   Gragas: "Gragas",
   Graves: "Graves",
@@ -148,25 +148,39 @@ const championName = {
   Zyra: "Zyra",
 };
 
+const media = document.createElement("iframe");
+const mediaContainer = document.getElementById("media__container");
+
+const nextPage = document.getElementById("image__container");
+
 const FRONT_IMAGE =
   "https://ddragon.leagueoflegends.com/cdn/10.4.1/img/champion/";
 const BACK_IMAGE = ".png";
+const CHAM_NAME = Object.keys(championName);
 
-const makeImage = () => {
-  for (let i = 0; i < Object.keys(championName).length; i++) {
-    const nextPage = document.getElementById("image__container");
+const mediaMake = (i) => {
+  if (i) {
+    mediaContainer.append(media);
+    media.setAttribute("width", "420");
+    media.setAttribute("height", "315");
+    media.setAttribute("allowfullscreen", "allowfullscreen");
+    media.setAttribute("src", championName[CHAM_NAME[i]]);
+  }
+};
+
+const imageMake = () => {
+  for (let i = 0; i < CHAM_NAME.length; i++) {
     const chamImage = document.createElement("input");
     nextPage.append(chamImage);
     chamImage.setAttribute("type", "image");
     chamImage.setAttribute("id", "chamImage");
     chamImage.setAttribute("width", "100");
     chamImage.setAttribute("height", "100");
-    chamImage.setAttribute(
-      "src",
-      FRONT_IMAGE + Object.keys(championName)[i] + BACK_IMAGE
-    );
-    chamImage.setAttribute("value", Object.keys(championName)[i]);
-    chamImage.setAttribute("onClick", "location.href='player.html'");
+    chamImage.setAttribute("src", FRONT_IMAGE + CHAM_NAME[i] + BACK_IMAGE);
+    chamImage.setAttribute("value", `${CHAM_NAME[i]}`);
+    chamImage.setAttribute("onclick", `mediaMake(${i})`);
   }
 };
-makeImage();
+
+imageMake();
+mediaMake();
