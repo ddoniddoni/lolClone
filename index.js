@@ -163,6 +163,7 @@ const mediaMake = (i) => {
     alert("준비중입니다!");
   } else {
     mediaContainer.append(media);
+    media.setAttribute("id", "video");
     media.setAttribute("width", "420");
     media.setAttribute("height", "315");
     media.setAttribute("allowfullscreen", "allowfullscreen");
