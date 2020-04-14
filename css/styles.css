@@ -4,6 +4,22 @@ a {
   text-decoration: none;
 }
 
+#media__container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+#image__container {
+  margin-top: 10px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
 #chamImage {
   margin: 4px;
 }

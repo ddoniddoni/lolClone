@@ -2,8 +2,8 @@ const championName = {
   Aatrox: "9h55R7-ZrHs",
   Ahri: "C1jwdYB3xZk",
   Akali: "CEhpa3f6lxQ",
-  Alistar: "X3aunU-0I1",
-  Amumu: "Amumu",
+  Alistar: "X3aunU-0I1Q",
+  Amumu: null,
   Anivia: "uSwLVtLoDbc",
   Annie: "cQ8l0tT9vVo",
   Aphelios: "5jxkq3L0WIA",
@@ -12,13 +12,13 @@ const championName = {
   Azir: "-7rql-3ldak",
   Bard: "5jZxKqYKV1E",
   Blitzcrank: "R3CobKdh54s",
-  Brand: "Brand",
+  Brand: null,
   Braum: "nco6WVgiIN0",
   Caitlyn: "eYMn7wHx-E8",
   Camille: "xMLXqS11JN0",
-  Cassiopeia: "Cassiopeia",
+  Cassiopeia: null,
   Chogath: "rhStDciV7oo",
-  Corki: "Corki",
+  Corki: null,
   Darius: "sy50Pjjuba4",
   Diana: "oRvOwuXC8Gs",
   DrMundo: "5RwdGOe_Gho",
@@ -36,7 +36,7 @@ const championName = {
   Gnar: "dg6TNm9JeMg",
   Gragas: "2wlDTnGay5k",
   Graves: "NMLZqc2466w",
-  Hecarim: "Hecarim",
+  Hecarim: null,
   Heimerdinger: "_f4HNshraF8",
   Illaoi: "xzwQLVvFvyk",
   Irelia: "jaAtGbwvEXg",
@@ -44,27 +44,27 @@ const championName = {
   Janna: "a3yoeBZn4tY",
   JarvanIV: "JaE5tutryzg",
   Jax: "UFQ_ROA1034",
-  Jayce: "Jayce",
+  Jayce: null,
   Jhin: "QJWr34NiBDA",
   Jinx: "y58dn6B7DQk",
   Kaisa: "wHQPnpueWJc",
   Kalista: "CwaBD9NZpEI",
   Karthus: "eJWphXdTINA",
   Kassadin: "G3tfT6yjVg4",
-  Katarina: "Katarina",
+  Katarina: "ZzucN4XqN1E",
   Kayle: "CYnzqEICFqo",
   Kayn: "HKT75nMCiEE",
-  Kennen: "Kennen",
-  Khazix: "Kha'Zix",
+  Kennen: null,
+  Khazix: null,
   Kindred: "SBIxFylSrRA",
   Kled: "9GHQkS39emA",
-  KogMaw: "Kogmaw",
-  Leblanc: "LeBlanc",
+  KogMaw: null,
+  Leblanc: "VaBAZnQUhfE",
   LeeSin: "P118XiLtpUc",
   Leona: "gXLo0FcWIJc",
-  Lissandra: "Lissandra",
+  Lissandra: null,
   Lucian: "WGXiC1MJTFY",
-  Lulu: "Lulu",
+  Lulu: null,
   Lux: "e9anbDh7zxo",
   Malphite: "geWO78R7XHk",
   Malzahar: "_FGPDPPUt7U",
@@ -81,7 +81,7 @@ const championName = {
   Nocturne: "XbJ48w1YjNQ",
   Nunu: "YaQzxY1qCro",
   Olaf: "Q5G2cqDYQMA",
-  Orianna: "Orianna",
+  Orianna: null,
   Ornn: "O3L-mM6lMQk",
   Pantheon: "maM03P2JkDs",
   Poppy: "_zxz-K6CHCA",
@@ -99,13 +99,13 @@ const championName = {
   Sejuani: "hevlNSfn6ks",
   Senna: "w4gR_w0aoBo",
   Sett: "IwPKFCkjTGM",
-  Shaco: "Shaco",
+  Shaco: null,
   Shen: "VZMT08kvj5M",
-  Shyvana: "Shyvana",
-  Singed: "Singed",
+  Shyvana: null,
+  Singed: null,
   Sion: "cN3i672P8qA",
   Sivir: "c27v12moX4Y",
-  Skarner: "Skarner",
+  Skarner: null,
   Sona: "ySe87Vl2JFE",
   Soraka: "S5JGW2fzpZk",
   Swain: "E_l_HXoj4dE",
@@ -115,35 +115,35 @@ const championName = {
   Taliyah: "pjVhY0gZQGY",
   Talon: "Yz48hztR5Dc",
   Taric: "yGLrEfSs04s",
-  Teemo: "GTeemoaren",
+  Teemo: null,
   Thresh: "tXi4hW7j0II",
   Tristana: "3T6iekbxFUc",
-  Trundle: "Trundle",
+  Trundle: null,
   Tryndamere: "Tryndamere",
   TwistedFate: "P68kZunwwOI",
   Twitch: "p3WTQCRNhaM",
-  Udyr: "Udyr",
+  Udyr: null,
   Urgot: "I-gcAVoZUzU",
-  Varus: "Varus",
-  Vayne: "Vayne",
-  Veigar: "Veigar",
+  Varus: null,
+  Vayne: null,
+  Veigar: null,
   Velkoz: "cB1CFB18qOA",
-  Vi: "Vi",
-  Viktor: "Viktor",
+  Vi: null,
+  Viktor: null,
   Vladimir: "ePt8luea6eY",
   Volibear: "UVIvrm-Phk8",
   Warwick: "wAVtJb_V34U",
   MonkeyKing: "rKHuMmSSHzM",
   Xayah: "AxRC1agaqEI",
-  Xerath: "Xerath",
-  XinZhao: "XinZhao",
+  Xerath: null,
+  XinZhao: null,
   Yasuo: "cjygCCrYd4U",
   Yorick: "JIWg_uMy7uE",
   Yuumi: "BzOWDgj672M",
   Zac: "QeDjeu9LLMQ",
   Zed: "8ygaGekdwTw",
-  Ziggs: "Ziggs",
-  Zilean: "Zilean",
+  Ziggs: null,
+  Zilean: null,
   Zoe: "AdvYfb3u6DQ",
   Zyra: "osDRO_LnSS4",
 };
@@ -151,41 +151,35 @@ const championName = {
 const media = document.createElement("iframe");
 const mediaContainer = document.getElementById("media__container");
 
-const nextPage = document.getElementById("image__container");
+const image__container = document.getElementById("image__container");
 
 const FRONT_IMAGE = "https://ddragon.leagueoflegends.com/cdn/10.4.1/img/champion/";
 const BACK_IMAGE = ".png";
 const CHAM_NAME = Object.keys(championName);
 const FRONT_MEDIA = "https://www.youtube.com/embed/";
 
-media.style.display = "none";
-
 const mediaMake = (i) => {
-  mediaContainer.append(media);
-  media.setAttribute("width", "420");
-  media.setAttribute("height", "315");
-  media.setAttribute("allowfullscreen", "allowfullscreen");
-  media.setAttribute("src", FRONT_MEDIA + championName[CHAM_NAME[i]]);
-  media.style.display = "block";
-  media.focus();
+  if (championName[CHAM_NAME[i]] === null) {
+    alert("준비중입니다!");
+  } else {
+    mediaContainer.append(media);
+    media.setAttribute("width", "420");
+    media.setAttribute("height", "315");
+    media.setAttribute("allowfullscreen", "allowfullscreen");
+    media.setAttribute("src", FRONT_MEDIA + championName[CHAM_NAME[i]]);
+  }
 };
 
 const imageMake = () => {
   for (let i = 0; i < CHAM_NAME.length; i++) {
     const chamImage = document.createElement("input");
-    nextPage.append(chamImage);
+    image__container.append(chamImage);
     chamImage.setAttribute("type", "image");
     chamImage.setAttribute("id", "chamImage");
     chamImage.setAttribute("width", "100");
     chamImage.setAttribute("height", "100");
     chamImage.setAttribute("src", FRONT_IMAGE + CHAM_NAME[i] + BACK_IMAGE);
     chamImage.setAttribute("onclick", `mediaMake(${i})`);
-  }
-};
-
-const test = () => {
-  if (top !== window) {
-    top.location = window.location;
   }
 };
 
